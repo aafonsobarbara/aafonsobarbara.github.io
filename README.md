@@ -7,7 +7,7 @@
 
 - 🌱 I’m currently learning **React :electron:**
 
-- 📌 See my UI works [dribbble.com/babilsa](dribbble.com/babilsa)
+- 📌 See my UI works on [dribbble](https://dribbble.com/babilsa)
 
 - 📫 Contact me **aafonsobarbara@gmail.com**
 
