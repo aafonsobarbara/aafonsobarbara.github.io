@@ -1,0 +1,129 @@
+$black: #141414;
+$pink: #b31e6f;
+$salmon: #ee5a5a;
+$gray: #d9d9d9;
+$light-black: rgba(44, 44, 44, 0.5);
+$gradient: linear-gradient(
+  180deg,
+  #b31e6f -8.5%,
+  #e88a1a 113.5%,
+  #ee5a5a 113.5%
+);
+$cutive: 'Cutive Mono', monospace;
+$montserrat: 'Montserrat', sans-serif;
+
+@function em($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1em;
+}
+@mixin mobile {
+  @media (max-width: 490px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin textos {
+  font-family: $cutive;
+  font-size: em(22);
+  line-height: 109.4%;
+  color: $gray;
+  @include mobile() {
+    text-align: center;
+    font-size: em(18, 16);
+  }
+}
+
+@mixin h1 {
+  font-family: $montserrat;
+  font-weight: 900;
+  font-size: em(100);
+  line-height: 92px;
+  text-transform: uppercase;
+  @include tablet {
+    font-size: em(70, 16);
+  }
+  @include mobile {
+    font-size: em(45, 16);
+    text-align: center;
+    line-height: 52px;
+  }
+}
+
+@mixin h2 {
+  font-family: $montserrat;
+  font-size: em(30);
+  font-weight: bold;
+  @include tablet {
+    font-size: em(20, 16);
+  }
+}
+@mixin h4 {
+  font-family: $montserrat;
+  font-weight: bold;
+  font-size: em(14);
+  text-transform: uppercase;
+  color: $salmon;
+}
+
+@mixin btn {
+  font-family: $montserrat;
+  font-weight: bold;
+  font-size: em(18);
+  line-height: 99.9%;
+  text-transform: uppercase;
+  text-align: center;
+  color: $gray;
+  border: 1px solid $gray;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  @include hover;
+  &:hover {
+    border-color: $pink;
+  }
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin width {
+  width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@mixin input {
+  border: 1px solid $gray;
+  background: transparent;
+  box-sizing: border-box;
+  max-width: 600px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  color: $black;
+  font-family: $cutive;
+  font-size: em(18);
+  transition: ease-in-out 0.5s;
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0px 0px 6px 2px rgba(255, 252, 252, 0.25);
+    transition: 0.5s;
+  }
+  &::placeholder {
+    color: $gray;
+  }
+  @include tablet {
+    width: 100%;
+  }
+}
+
+@mixin hover {
+  transition: 0.5s;
+  &:hover {
+    color: $pink;
+    transition: 0.5s;
+  }
+}

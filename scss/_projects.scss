@@ -1,0 +1,52 @@
+.projects {
+  @include center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  height: 100vh;
+  position: relative;
+  h4 {
+    @include h4;
+    padding: 10px 0;
+  }
+  h2 {
+    @include h2;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+.swiper-wrapper {
+  padding: 40px 0;
+}
+.swiper-slide {
+  position: relative;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 350px;
+    height: 350px;
+  }
+  h1 {
+    @include h4;
+    color: $gray;
+    position: absolute;
+    bottom: 120px;
+  }
+  a {
+    @include btn;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 70px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $pink !important;
+}

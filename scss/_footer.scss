@@ -1,0 +1,119 @@
+footer {
+  background: $light-black;
+  display: flex;
+  align-items: flex-end;
+  height: 750px;
+  @include tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  .footer-content {
+    background: $gradient;
+    height: 110%;
+    width: 900px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    @include tablet {
+      height: auto;
+      width: 100%;
+    }
+    .contato {
+      background-image: url('/imgs/bg.png');
+      @include tablet {
+        padding: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+      }
+    }
+    h1 {
+      @include h1;
+      margin-bottom: 80px;
+
+      text-align: center;
+    }
+  }
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    width: 100%;
+    align-items: center;
+  }
+  label {
+    font-family: $montserrat;
+    font-size: em(18);
+    margin-bottom: 10px;
+  }
+  input {
+    @include input;
+  }
+  textarea {
+    @include input;
+    height: 150px;
+  }
+  input.btn {
+    @include btn;
+    max-width: 260px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  span {
+    @include textos;
+    color: $pink;
+    padding: 10px 0;
+    visibility: hidden;
+  }
+}
+
+.contato-content {
+  padding: 70px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  @include tablet {
+    padding: 40px;
+  }
+  .list-contato {
+    font-size: em(18);
+    margin-bottom: 140px;
+    h4 {
+      @include h4;
+      padding-bottom: 30px;
+    }
+    .infos {
+      @include h4;
+      color: $gray;
+      text-transform: lowercase;
+      padding: 10px 0;
+    }
+    a {
+      display: block;
+      @include h4;
+      color: $gray;
+      text-transform: capitalize;
+      padding: 10px 0;
+      @include hover;
+      i {
+        font-size: 20px;
+        padding-right: 10px;
+      }
+    }
+  }
+  p {
+    @include h4;
+    color: $gray;
+    text-transform: none;
+    span {
+      color: $salmon;
+    }
+  }
+}

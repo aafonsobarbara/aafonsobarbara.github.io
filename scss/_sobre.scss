@@ -1,0 +1,62 @@
+.about {
+  @include center;
+  background: $light-black;
+  padding-bottom: 80px;
+
+  .about-content {
+    @include width;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    position: relative;
+    @include tablet {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
+  }
+}
+.about .list-tools {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 660px;
+  @include tablet {
+    width: auto;
+    padding: 0 20px;
+  }
+  .list {
+    @include tablet {
+      padding: 0 20px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      @include h2;
+      span img {
+        padding-right: 40px;
+        @include tablet {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+.about .about-me {
+  img {
+    position: absolute;
+    top: -175px;
+  }
+  h4 {
+    @include h4;
+    padding: 20px 0;
+  }
+  p {
+    @include textos;
+    max-width: 350px;
+  }
+}

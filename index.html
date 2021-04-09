@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <title>Barbara Afonso</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_kodw95STZ6m6qUoVJeES7");
+    })();
+  </script>
+
+</head>
+
+<body>
+  <div class="loading-page">
+    <img src="./imgs/logo.svg" alt="">
+  </div>
+  <header class="js">
+    <div class="menu">
+      <a href="#"><img src="/imgs/logo.svg" alt="Logo"></a>
+      <ul class="menu-links menu-mobile">
+        <li><a href="" class="hamburguer"><img src="./imgs/menu.svg" alt=""></a></li>
+        <li><a href="#about" class="link">about</a></li>
+        <li><a href="#projects" class="link">works</a></li>
+        <li><a href="#contato" class="link">contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="js">
+    <div class="main-content">
+      <h1>A web <br>developer</h1>
+      <p>Hi, I’m Barbara. I’m a Web Developer with experience using Html, Css and Javascript. I love create designs and change them to code. </p>
+      <a href="">see my work</a>
+    </div>
+  </main>
+  <section class="about js js-scroll" id="about">
+    <div class="about-content">
+      <div class="list-tools">
+        <div class="list">
+          <li><span><img src="./imgs/css.svg" alt=""></span>HTML</li>
+          <li><span><img src="./imgs/html.svg" alt=""></span>CSS</li>
+          <li><span><img src="./imgs/js.svg" alt=""></span>JAVASCRIPT</li>
+        </div>
+        <div class="list">
+
+          <li><span><img src="./imgs/react.svg" alt=""></span>REACT</li>
+          <li><span><img src="./imgs/tailwind.svg" alt=""></span>Tailwind</li>
+          <li><span><img src="./imgs/Group 2.svg" alt=""></span>BOOTSTRAP</li>
+        </div>
+      </div>
+      <div class="about-me">
+        <img src="./imgs/me.png" alt="Barbara">
+        <h4>About</h4>
+        <p>I am a Web Developer: in addition to being a web designer I love to do UI designs and learn more about Front-end. I have knowledge in other languages like PHP and I also do a lot of projects using UX.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="projects js js-scroll" id="projects">
+    <h4>Beauty & Quality</h4>
+    <h2>MY PORTFOLIO</h2>
+    <div class="swiper-container ">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./imgs/ozbaianos.png" alt="">
+          <h1>Oz Baianos</h1>
+          <a href="http://ozbaianos.cf/" target="_blank" class="btn">SEE CASE</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./imgs/korona-killer.png" alt="">
+          <h1>Covid for Kids</h1>
+          <a href="https://corona-info-kids.netlify.app/" target="_blank" class="btn">SEE CASE</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./imgs/gr2b.png" alt="">
+          <h1>GR2B</h1>
+          <a href="https://www.gr2b.com.br/" target="_blank" class="btn">SEE CASE</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./imgs/projects.png" alt="">
+          <h1>Projects F.E Mentor</h1>
+          <a href="https://frontendmentor-projects.netlify.app/" target="_blank" class="btn">SEE CASE</a>
+        </div>
+
+
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </section>
+
+  <footer id="contato" class="js js-scroll">
+    <div class="footer-content">
+      <div class="contato">
+        <h1>Hire me</h1>
+        <form action="" id="contact-form">
+          <input type="hidden" name="contact_number">
+          <label for="name">Name</label>
+          <input type="text" name="user_name" placeholder="Enter your name" required>
+          <label for="email">Email</label>
+          <input type="email" name="user_email" placeholder="Enter your email" required>
+          <label for="text">Message</label>
+          <textarea name="message" id="" placeholder="Write something" required></textarea>
+          <!-- <a href="" class="btn" type="submit" value="Send">Send Message</a> -->
+          <input type="submit" value="Send" class="btn">
+          <span class="success">Thanks for your message!</span>
+        </form>
+      </div>
+    </div>
+    <div class="contato-content">
+      <div class="list-contato">
+        <h4>More Contact</h4>
+        <h4 class="infos">aafonsobarbara@gmail.com</h4>
+        <h4 class="infos">+55 38 98435-1975</h4>
+      </div>
+      <div class="list-contato">
+        <h4>See more</h4>
+        <a href=""><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href=""><i class="fab fa-github"></i> Github</a>
+      </div>
+      <p>All rights reserved. By <span>Barbara Afonso.</span></p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

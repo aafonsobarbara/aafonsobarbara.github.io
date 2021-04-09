@@ -1,0 +1,23 @@
+.loading-page {
+  box-sizing: border-box;
+  background-color: $black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loading 2s infinite;
+  animation-delay: 0;
+  animation-direction: alternate;
+  #icon-logo {
+    width: 200px;
+  }
+}
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}

@@ -1,0 +1,23 @@
+@import 'reset';
+@import 'variaveis';
+@import 'header';
+@import 'main';
+@import 'sobre';
+@import 'projects';
+@import 'footer';
+@import 'load';
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat:wght@300;400;500;700;800;900&display=swap');
+body {
+  background: $black;
+  color: $gray;
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: 0.3s;
+}
+.js-scroll.ativo {
+  opacity: 1;
+  transition: 0.3s;
+}
