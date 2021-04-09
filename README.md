@@ -11,7 +11,7 @@
 
 - 📫 Contact me **aafonsobarbara@gmail.com**
 
-- 📄 See my experiences [aafonsobarbara.github.io/aafonsobarbara/](aafonsobarbara.github.io/aafonsobarbara/)
+- 📄 See my experiences [https://aafonsobarbara.github.io/](aafonsobarbara.github.io)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
